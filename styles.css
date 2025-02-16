@@ -1,0 +1,66 @@
+/* FULLSCREEN VIDEO BACKGROUND */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background: black;
+}
+
+/* VIDEO BACKGROUND */
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Send behind all elements */
+}
+
+/* GLOWING BUTTON */
+a {
+    text-decoration: none;
+}
+
+h1 {
+    display: inline-block;
+    background-color: #1e1e1e;
+    color: white;
+    font-size: 24px;
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: 3px solid #0ff; /* Neon border */
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 10px #0ff, 0 0 40px #0ff, 0 0 80px #0ff;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+/* HOVER EFFECT */
+h1:hover {
+    box-shadow: 0 0 20px #0ff, 0 0 60px #0ff, 0 0 120px #0ff;
+    transform: scale(1.1);
+}
+
+/* CUSTOM CURSOR EFFECT */
+.spider {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: shrink 0.5s forwards;
+}
+
+@keyframes shrink {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0); opacity: 0; }
+}
