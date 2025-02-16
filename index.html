@@ -3,22 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Wallpaper & Glowing Button</title>
-    <link rel="stylesheet" href="styles.css">  <!-- Link to external CSS -->
+    <title>Kishor Bormon | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <!-- VIDEO BACKGROUND -->
-    <video autoplay loop muted id="background-video">
-        <source src="background.mp4" type="video/mp4"> <!-- Local background video -->
-        Your browser does not support HTML5 video.
-    </video>
+    <!-- HEADER SECTION -->
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
 
-    <!-- BUTTON WITH FACEBOOK LINK -->
-    <a href="https://www.facebook.com" target="_blank">
-        <h1>Go to Facebook</h1>
-    </a>
+    <!-- PROFILE SECTION -->
+    <section class="profile">
+        <!-- Profile Picture -->
+        <div class="profile-img-container">
+            <img src="https://i.postimg.cc/t4bBmpcy/467428674-1123865159411410-9090573057947384565-n.jpg" 
+                 alt="Kishor Bormon" class="profile-pic">
+        </div>
 
-    <script src="script.js"></script> <!-- Link to JavaScript file -->
+        <!-- Name -->
+        <h2 class="profile-name">Kishor Bormon</h2>
+        <p>Web Developer | Designer | Coder</p>
+
+        <!-- SOCIAL MEDIA BUTTONS -->
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/kishor.kumarbormon" target="_blank" class="social-btn facebook">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="https://www.linkedin.com/in/kishorbormon/" target="_blank" class="social-btn linkedin">
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" class="social-btn youtube">
+                <i class="fab fa-youtube"></i> YouTube
+            </a>
+            <a href="https://www.instagram.com/kishor_bormon/" target="_blank" class="social-btn instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of your awesome project.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Another amazing project details.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Kishor Bormon. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
